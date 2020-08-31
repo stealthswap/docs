@@ -4,10 +4,10 @@
 ## Abstract
 
 In this paper we present StealthSwap a decentralized on-chain oracle based stealth payments protocol for Ethereum transactions.
-StealthSwap functions using smart contracts only and doesn't require zkSNARks or more complex cryptographic primitives to operate.
+StealthSwap operates using smart contracts and doesn't need any complex cryptography primitives to use.
 Making it both use 80% less fees than other privacy based solutions and easier to audit and verify.
 
-StealthSwap doesn't require sidechains or any constraints on token amounts and time, using StealthSwap you can send
+StealthSwap doesn't need sidechains, and has no constraints on amounts or time. By using StealthSwap you can send
 and receive Ether and any ERC20 token without anyone's knowledge.
 
 
@@ -29,11 +29,11 @@ the blockchain represents a tamper-proof platform for insuring and verifying the
 One example of privacy is anonymity, or privacy of identity. In the context of public blockchains, 
 anonymity refers to the ability for parties to exchange something (i.e. money, tokens, or data) 
 without needing to reveal identity-related information about themselves or other transactions they have done. 
-While this is only one facet of privacy, it has become increasingly important as blockchain has evolved.
+While this is only one facet of privacy, it has become important as blockchain has evolved.
 
-Cryptocurrencies like bitcoin and ether have been increasingly traced to correlate public addresses across transactions and to analyze and link to off-chain identities on crypto to fiat conversions. The net effect of this makes the identities of parties in transactions more public. Because public blockchains must fundamentally provide a log of all transactions, privacy for consumers and enterprises using cryptographic algorithms and protocols has become increasingly relevant.
+Cryptocurrencies like bitcoin and ether are traced to correlate public addresses across transactions and to analyze and link to off-chain identities on crypto to fiat conversions. The net effect of this makes the identities of parties in transactions more public. Because public blockchains must fundamentally provide a log of all transactions, privacy for consumers and enterprises using cryptographic algorithms and protocols has become relevant.
 
-Enterprises and consumers have very different demands when it comes to privacy. Enterprises typically require privacy in the form of transaction data, for example, product name, quantity, price, address, personally identifiable financial information, etc.
+Enterprises and consumers have very different demands when it comes to privacy. Enterprises require privacy in the form of transaction data, for example, product name, quantity, price, address, personally identifiable financial information, and so on.
 
 The lack of privacy on Ethereum represents a large issue since accounts are more easier to trace and track than UTXOs.
 
@@ -43,7 +43,7 @@ are not suitable for the case of token transfers.
 Mixers work are a technology based on scrambling transactions together. 
 But Mixers only work with transactions happening at that moment by using a set of fake transactions (called "Mix-ins") plus 
 several real transactions all which sum to approximated the same number of units of ETH. 
-Basically, when you send a transaction for 5 units of ETH, you need to wait for 1 or 2 other people to also send 5 ETH so that you can scramble all 3 transactions together.
+When you send a transaction for 5 ETH, you need to wait for 1 or 2 other people to also send 5 ETH so that you can scramble all 3 transactions together.
 Mixers send the outputs to a bunch of addresses with smaller amounts which sum to your original units. 
 This way it can be very confusing to line up who sent what to where when you are actively trying to make transactions look similar. 
 The system works better the more people who are using it at that moment.
